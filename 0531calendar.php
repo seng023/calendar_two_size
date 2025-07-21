@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +10,7 @@
   min-height: 100vh; background-size: cover ;  min-height: 100vh;
     margin: 0;                       }
 
-  div.a{ position: relative;  width: 500px;  height: 300px;  }
+  div.a{ position: relative;  width: 100%;  height: 300px;  }
   /* div.b{ display: flex;  flex-direction: column;  min-height: 100vh; width: 500px;  height: 300px;  }   */
         table.box { border-collapse: collapse; text-align: center ; width: 100%; max-width: 600px; margin: 20px auto;  }
        
@@ -57,7 +58,9 @@ p:hover, h1:hover, a:hover {
     }
 }
 
-
+div.a, .outer, .inner {
+  overflow: visible;
+}
 
 
 
@@ -77,7 +80,11 @@ p:hover, h1:hover, a:hover {
 
 <body background="./pp0531.jpeg"; >
 <div class="a">
-    <h2 style="background-color:rgba(255, 99, 71, 0.5);" ><font color="#AC19C9">簡易萬年曆</font></h2>
+    <h2  font-size: 2rem; line-height: 1.2;
+  word-break: break-word; /* 允許換行 */
+  white-space: normal;    /* 預設換行 */
+  margin: 0;
+  padding: 10px; style="background-color:rgba(255, 99, 71, 0.5);"      ><font color="#AC19C9">簡易萬年曆</font></h2>
 </div>
 
     <?php
@@ -229,3 +236,6 @@ $monthName = date('F', strtotime("$year-$month-01"));
 
 
 </html>
+
+
+
